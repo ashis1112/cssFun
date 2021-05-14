@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+/* Turns off the up's and down button */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container{
+    background-color: salmon;
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.code{
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: 1px solid salmon;
+    padding: 20px;
+    font-size: 65px;
+    width: 80px;
+}
+
+.code:valid{
+    border-color: rgb(78, 74, 74);
+    box-shadow: 0 10 10 -5 rgba(97, 96, 96, 0.8);
+}
+.code:invalid{
+    border: none;
+}
+.info{
+    background-color: #eaeaea41;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
