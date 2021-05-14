@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.search {
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    align-self: center;
+    position: relative;
+    border: none;
+    top: 5px;
+  }
+#mysearch{
+    width: 93%;
+    
+}
+.container{
+    width: 250px;
+    height: 100vh;
+    background-color: gray;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
+    overflow: hidden;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+}
+
+#myMenu{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    color:white;
+    transition: 0.3s;
+  }
+
+  #myMenu li a:hover{
+      background-color: white;
+      color: black;
+  }
+
+#btn{
+    border: 1ps solid black;
+    width: 500px;
+    height: 500px;
+    left: 80%
+}
+
+.line{
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+.cont {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
